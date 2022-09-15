@@ -1,0 +1,32 @@
+.dot {
+  margin: 0 10px 0 10px;
+}
+
+.reading-time {
+  font-size: 16px;
+  
+}
+.reading-wrapper{
+  margin-left: 5px;
+  padding-top: 15px;
+}
+.article-wrapper {
+  display: flex;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.article-wrapper:hover {
+  cursor: pointer;
+}
+
+
+.articleTitle { 
+  font-size: 40px;
+}
+
+.wrapper { 
+  justify-items: flex-start;
+
+  display: flex;
+}

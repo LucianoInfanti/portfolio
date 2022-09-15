@@ -1,0 +1,25 @@
+.headerWrapper {
+	display: flex;	
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.info {
+	width: 350px;
+}
+
+.logoWrapper {
+	width: 30vw;
+}
+
+.leftWrapper {
+	display: flex;
+}
+
+.italicLink{
+	margin-left: 4px;
+}
+
+.socialWrapper > a {
+	margin-left: 5px;
+}
