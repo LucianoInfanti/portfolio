@@ -5,19 +5,28 @@ export default function Header(props) {
     <div className="headerWrapper">
       <div className="leftWrapper">
         <div class="logoWrapper">
-          <a href="/#/">Luciano Infanti</a>
+          <a href="/" className="motionHover">
+            Luciano Infanti
+          </a>
         </div>
 
-        <div className="info">
-         {props.info}
-        </div>
+        <div className="info">{props.info}</div>
       </div>
       <div class="socialWrapper">
-        <a href="https://www.linkedin.com/in/luciano-infanti/">LinkedIn</a>
+        <a
+          href="https://www.linkedin.com/in/luciano-infanti/"
+          className="motionHover"
+        >
+          LinkedIn
+        </a>
         <span>,</span>
-        <a href="https://github.com/LucianoInfanti">GitHub</a>
+        <a href="https://github.com/LucianoInfanti" className="motionHover">
+          GitHub
+        </a>
         <span>,</span>
-        <a href="https://savee.it/lucianoinfanti/">Savee</a>
+        <a href="https://savee.it/lucianoinfanti/" className="motionHover">
+          Savee
+        </a>
       </div>
     </div>
   );

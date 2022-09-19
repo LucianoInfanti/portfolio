@@ -1,19 +1,25 @@
 import "./articletitle.css";
-import MainImage from "./MainImage";
+import Image from "./Image";
+import { motion } from "framer-motion";
 
 export default function ArticleTitle(props) {
   return (
-    <div className="title-wapper">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 0.6 }}
+      className="title-wapper"
+    >
       <h1 className="title">{props.title}</h1>
       <p className="subtitle">{props.subtitle}</p>
       {props.folder !== undefined && (
-        <MainImage
+        <Image
           folder={props.folder}
           image={props.image}
           alt={props.alt}
           description={props.description}
         />
       )}
-    </div>
+    </motion.div>
   );
 }

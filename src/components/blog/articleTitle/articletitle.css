@@ -2,35 +2,19 @@
 	font-size: 64px;
 	letter-spacing: -3px;
 	line-height: 110%;
-	padding-top: 40vh;
-	max-width: 50vw;
-	margin-left: 30vw;
+	padding-top: 25vh;
+	max-width: 575px;
 }
 
 .subtitle{ 
-	max-width: 700px;
-	margin-left: 20vw;
-	margin-top: 32px;
-	margin-left: 30vw;
-	font-size: 24px;
+	max-width: 575px;
+	font-size: var(--fs-500);
 	font-weight: 100;
-	line-height: 160%;
+	line-height: 32.26px;
 }
 
-.tags-wrapper-title { 
-	margin-left: 20vw;
-    margin-top: 20vh;
-}
 
-.mainImage { 
+.image { 
 	margin-top: 70px;
 }
-
-img {
-	height: 700px;
-	width: 100vw;
-	
-	margin-right: 30px;
-  }
-  
   /* ADD VISITED TO A */ 

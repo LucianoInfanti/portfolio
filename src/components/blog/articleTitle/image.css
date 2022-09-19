@@ -1,0 +1,11 @@
+.image-description {
+	font-size: 14px;
+	opacity: 0.5;
+	margin-top: 8px;
+	max-width: 575px;
+}
+
+.image {
+	width: 575px;
+	overflow: hidden;
+}
