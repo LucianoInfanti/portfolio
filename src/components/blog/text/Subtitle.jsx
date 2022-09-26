@@ -6,7 +6,7 @@ const Subtitle = (props) => {
     <motion.p
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ ease: "easeInOut", duration: 0.4 }}
+      transition={{ ease: "easeInOut", duration: 0.6 }}
       viewport={{ once: true }}
       className="article-section-title"
     >

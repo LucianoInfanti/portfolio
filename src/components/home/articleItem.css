@@ -1,32 +1,30 @@
-.dot {
-  margin: 0 10px 0 10px;
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .reading-time {
   font-size: 16px;
-  
+  margin-top: -15px;  
+  margin-left: 6px;
 }
-.reading-wrapper{
-  margin-left: 5px;
-  padding-top: 15px;
-}
+
+
 .article-wrapper {
-  display: flex;
-  padding-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .article-wrapper:hover {
   cursor: pointer;
 }
 
-
-.articleTitle { 
+.articleTitle {
   font-size: 40px;
 }
 
-.wrapper { 
-  justify-items: flex-start;
-
-  display: flex;
+.wrapper:hover {
+  opacity: 0.5;
 }

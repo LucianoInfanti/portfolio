@@ -1,0 +1,29 @@
+.componentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.articleWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+
+.spacer {
+    height: 250px;
+}
+
+.period {
+    margin-bottom: 40px;
+    font-size: 17px;
+    color: rgb(163, 163, 163);
+}
+
+
+
+

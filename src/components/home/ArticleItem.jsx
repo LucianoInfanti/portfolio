@@ -6,12 +6,9 @@ export default function Article(props) {
       <a href={props.route} className="motionHover">
         <div className="article-wrapper">
           <p className="articleTitle">{props.title}</p>
-
         </div>
       </a>
-      <div className="reading-wrapper">
-            <span className="reading-time">{props.time}</span>
-          </div>
+      <span className="reading-time">{props.time}</span>
     </div>
   );
 }

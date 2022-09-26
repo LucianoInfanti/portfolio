@@ -1,19 +1,27 @@
 :root {
-  --clr-primary: black;
-  --clr-secondary: white;
+  --text: black;
+  --background: white;
   --clr-neutral-100: #e5e5e5;
   --clr-neutral-200: #999999;
   --clr-body: #fff;
 
-  --fs-300: 1rem; /* 16px : read time */
-  --fs-400: 1.125rem; /* 18px : home page + nav items */
-  --fs-500: 1.213rem; /* 21px : article body */
-  --fs-600: 1.75rem; /* 28px : article sections */
-  --fs-650: 2rem; /* 32px: article title mobile */
-  --fs-700: 3rem; /* 48px : article title only*/
+  --fs-300: 1rem;
+  /* 16px : read time */
+  --fs-400: 1.125rem;
+  /* 18px : home page + nav items */
+  --fs-500: 1.213rem;
+  /* 21px : article body */
+  --fs-600: 1.75rem;
+  /* 28px : article sections */
+  --fs-650: 2rem;
+  /* 32px: article title mobile */
+  --fs-700: 3rem;
+  /* 48px : article title only*/
 
-  --lh-300: 150%; /* home page + nav items */
-  --lh-400: 160%; /* 32px : article copy */
+  --lh-300: 150%;
+  /* home page + nav items */
+  --lh-400: 160%;
+  /* 32px : article copy */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,6 +32,12 @@
   /* Blog utility classes */
   --section-title: var(--fs-600);
 }
+
+[data-theme='dark'] {
+  --text: white;
+  --background: black;
+}
+
 
 /* Box sizing rules */
 *,
@@ -39,7 +53,8 @@
   padding: 0;
 }
 
-ul, li{
+ul,
+li {
   list-style-type: none;
 }
 
@@ -56,61 +71,28 @@ html:focus-within {
 }
 
 
-a.motionHover {
+a {
   text-decoration: none;
   position: relative;
   color: black;
 }
 
-a.motionHover:before{
-	content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 1px;
-    width: 0;
-    transition: width 0s ease, background .5s ease;
-  }
 
-  a.motionHover:after{
-	content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    width: 0;
-    background: rgba(0, 0, 0, 1);
-    transition: width 0.5s ease-in-out;
-  }
 
-  a.motionHover:hover:before {
-	width: 100%;
-    background: rgba(0, 0, 0, 1);
-    transition: width 0.5s ease-in-out;
-  }
-
-  a.motionHover:hover:after{
-	width: 100%;
-    background: transparent;
-    transition: all 0s ease;
-  }
-  
-  em > .italic {
-    font-family: 'AdobeGaramondItalic', serif;
-  }
+em>.italic {
+  font-family: 'AdobeGaramondItalic', serif;
+}
 
 
 html,
 body {
-  color: black;
-  background-color: var(--clr-body);
+  color: var(--text);
+  background-color: var(--background);
   height: 100%;
   /* overflow: scroll; */
   font-family: 'AdobeGaramond', serif;
   line-height: var(--lh-300);
-  
+
 }
 
 /* Make images easier to work with */
@@ -128,28 +110,30 @@ body::-webkit-scrollbar {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 @font-face {
   font-family: "AdobeGaramond";
   src: local("AdobeGaramond"),
-  url("./fonts/AdobeGaramond.ttf");
+    url("./fonts/AdobeGaramond.ttf");
   font-weight: regular;
 }
 
 @font-face {
   font-family: "AdobeGaramondItalic";
   src: local("AdobeGaramondItalic"),
-  url("./fonts/AdobeGaramondItalic.ttf");
+    url("./fonts/AdobeGaramondItalic.ttf");
   font-weight: regular;
 }
 
 @font-face {
   font-family: "FiraCode";
   src: local("FiraCode"),
-  url("./fonts/FiraCode-Regular.ttf");
+    url("./fonts/FiraCode-Regular.ttf");
   font-weight: regular;
 }
 
@@ -158,13 +142,14 @@ body {
 .article-link {
   text-decoration: underline;
   color: blue;
-  font-family: 'AdobeGaramondItalic', serif; /* Talvez tirar isso aqui */
+  font-family: 'AdobeGaramondItalic', serif;
+  /* Talvez tirar isso aqui */
   font-size: 24px;
 }
 
 
 a.article-link {
-  color:black;
+  color: black;
   text-decoration: none;
   border-bottom: 1px dotted black;
 }
@@ -174,3 +159,35 @@ a.article-link:hover {
   border-bottom: 1px solid black;
 }
 
+.highlight {
+  font-family: FiraCode;
+  font-size: 17px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: rgb(221, 221, 221);
+}
+
+
+.sectionTtitle {
+  font-size: var(--section-title);
+}
+
+
+
+.italic {
+  font-family: "AdobeGaramondItalic", sans-serif;
+  font-size: 40px;
+}
+
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}

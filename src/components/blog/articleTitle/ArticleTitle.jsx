@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 
 export default function ArticleTitle(props) {
   return (
+    
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ ease: "easeInOut", duration: 0.6 }}
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1}}
+      transition={{ ease: "easeInOut", duration: 0.8 }}
       className="title-wapper"
     >
       <h1 className="title">{props.title}</h1>

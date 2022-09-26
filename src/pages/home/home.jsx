@@ -1,19 +1,17 @@
-import React from "react";
 import Header from "../../components/header/Header";
-import Article from "../../components/home/ArticleItem";
 import "./styles.css";
 import { motion } from "framer-motion";
-// import { trailingCursor } from "cursor-effects";
+import AnimatedTextWord from "../../components/AnimatedTextWords";
 
-// new trailingCursor({particles: 3});
 
 export default function Home() {
+
   const articles = [
     {
       id: 1,
       title: () => (
         <>
-          My title <em className="italic">Svelte</em>
+          My take on <em className="italic">Svelte</em>
         </>
       ),
       time: "05",
@@ -45,48 +43,91 @@ export default function Home() {
       route: "my-take-on-svelte",
       image: "image.png",
     },
+    {
+      id: 4,
+      title: () => (
+        <>
+          What I cannot <em className="italic">create</em>, I do not understand
+        </>
+      ),
+      time: "04",
+      folder: "article1",
+      route: "my-take-on-svelte",
+      image: "image.png",
+    },
   ];
-
   return (
     <div className="container">
-      <div className="header">
-        <Header
-          info={
-            <>
-              Designer + code enthuasiast based in São Paulo, Brazil currently
-              at
-              <a href="https://work.co/" className="italicLink motionHover">
-                Work & Co
-              </a>
-            </>
-          }
-        />
-      </div>
-
-      <div className="content">
-        <p className="sectionTitle">Writing</p>
-        <div className="articleWrapper">
-          <p>2021 — 2022</p>
-          {articles.map((article, i) => (
-            <motion.div
-              key={article.id}
-              initial={{ opacity: 0, translateY: 20 }}
-              animate={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-            >
-              <Article
-                title={article.title()}
-                time={article.time}
-                folder={article.folder}
-                route={article.route}
-                image={article.image}
-              />
-            </motion.div>
-          ))}
-
-          {articles.length > 3 && <div className="spacer"></div>}
+      <Header />
+       <p className="introduction">
+        <div className="row-one">
+          <AnimatedTextWord text="Designer and code enthuasiast" />
         </div>
-      </div>
+        <div className="row-two">
+          <AnimatedTextWord text="      based in São Paulo, Brazil" />
+        </div>
+        <div className="row-three">
+          <AnimatedTextWord text={"        currently at Work & Co"} />
+        </div>
+      </p> 
+
+      <motion.div
+        class="socialWrapper"
+        // initial={{ opacity: 0 }}
+        // whileInView={{ opacity: 1 }}
+        // transition={{ ease: "easeInOut", duration: 1, delay: 1 }}
+        // viewport={{ once: true }}
+      >
+        <a
+          target="blank"
+          href="https://www.linkedin.com/in/luciano-infanti/"
+          className="motionHover"
+        >
+          LinkedIn
+        </a>
+        <span>,</span>
+        <a
+          target="blank"
+          href="https://github.com/LucianoInfanti"
+          className="motionHover"
+        >
+          GitHub
+        </a>
+        <span>,</span>
+        <a
+          target="blank"
+          href="https://savee.it/lucianoinfanti/"
+          className="motionHover"
+        >
+          Savee
+        </a>
+      </motion.div>
+
+      
     </div>
   );
+}
+
+{
+  /* <p className="introduction">
+        <div className="row-one">
+          <AnimatedTextWord text="Designer + code enthuasiast" />
+        </div>
+        <div className="row-two">
+          <AnimatedTextWord text="   based in São Paulo, Brazil" />
+        </div>
+        <div className="row-three">
+          <AnimatedTextWord text={"    currently at Work & Co"} />
+        </div>
+      </p> */
+}
+
+{
+  /* <p className="introduction">
+        Designer + code enthuasiast based in São Paulo, Brazil currently at
+        <a href="https://work.co/" className="italic">
+          Work & Co
+        </a>
+      </p>
+      */
 }
