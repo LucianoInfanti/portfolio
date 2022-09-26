@@ -3,9 +3,7 @@ import "./styles.css";
 import { motion } from "framer-motion";
 import AnimatedTextWord from "../../components/AnimatedTextWords";
 
-
 export default function Home() {
-
   const articles = [
     {
       id: 1,
@@ -59,7 +57,7 @@ export default function Home() {
   return (
     <div className="container">
       <Header />
-       <p className="introduction">
+      <p className="introduction">
         <div className="row-one">
           <AnimatedTextWord text="Designer and code enthuasiast" />
         </div>
@@ -69,41 +67,31 @@ export default function Home() {
         <div className="row-three">
           <AnimatedTextWord text={"        currently at Work & Co"} />
         </div>
-      </p> 
+      </p>
 
       <motion.div
-        class="socialWrapper"
+        className="socialWrapper"
         // initial={{ opacity: 0 }}
         // whileInView={{ opacity: 1 }}
         // transition={{ ease: "easeInOut", duration: 1, delay: 1 }}
         // viewport={{ once: true }}
       >
-        <a
-          target="blank"
-          href="https://www.linkedin.com/in/luciano-infanti/"
-          className="motionHover"
-        >
+        <a target="blank" href="https://www.linkedin.com/in/luciano-infanti/">
           LinkedIn
         </a>
         <span>,</span>
-        <a
-          target="blank"
-          href="https://github.com/LucianoInfanti"
-          className="motionHover"
-        >
+        <a target="blank" href="https://github.com/LucianoInfanti/portfolio">
           GitHub
         </a>
         <span>,</span>
-        <a
-          target="blank"
-          href="https://savee.it/lucianoinfanti/"
-          className="motionHover"
-        >
+        <a target="blank" href="https://savee.it/lucianoinfanti/">
           Savee
         </a>
+        <span>,</span>
+        <a target="blank" href="https://dribbble.com/LucianoInfanti">
+          Dribbble
+        </a>
       </motion.div>
-
-      
     </div>
   );
 }

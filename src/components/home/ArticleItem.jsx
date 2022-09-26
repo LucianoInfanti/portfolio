@@ -1,4 +1,5 @@
 import "./articleItem.css";
+import AnimatedTextWord from "../AnimatedTextWords";
 
 export default function Article(props) {
   return (

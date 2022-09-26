@@ -1,11 +1,16 @@
 ## To do
 
 - Dark Mode
+- Remove the staggered animation at /Writing and use only a fade
 - Pass all data to `Data.json`
 - Take a pass at all animations and standardize motion tokens
 - Create the `<Image/>`component and its variations
 - Figure it out how to render `.mp4` files on web
 - Mobile
+- In prod: investigate weird routing realods
+- Home and Writing have different font sizes
+- Like counter for posts
+- Back to the top / Next / Previous
 
 ## To consider
 
@@ -19,8 +24,8 @@
 
 ## Done
 
-- ~~ "Active Route" trought React Router (possibly using `<NavLink>`) ~~
+- ~~"Active Route" trought React Router (possibly using `<NavLink>`) ~~
 - ~~When start to scroll hide 'Writing'~~
-- ~~- Review the z-index in the article page ~~
+- ~~Review the z-index in the article page ~~
 - ~~Review the stagger animation, it looks wrong, the timmings are most likely off~~
 - ~~Find a hook to avoid rendering `<Header/>` multiple times~~
