@@ -1,6 +1,5 @@
 import Image from "./Image";
 import { motion, useMotionValue, useScroll, useTransform } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 import ArticleTitle from "./ArticleTitle";
 
