@@ -1,7 +1,7 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Home from "../pages/home/home";
 import ArticleOne from "../pages/blog/My take on svelte";
-import ArticleTwo from "../pages/blog/Article2/Article2";
+import ArticleTwo from "../pages/blog/Article2";
 import Writing from "../pages/writing/writing";
 
 export default function ApplicationRoutes() {
