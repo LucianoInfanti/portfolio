@@ -1,9 +1,6 @@
 import Header from "../../../components/header/Header";
-import ArticleTitle from "../../../components/blog/articleTitle/ArticleTitle";
-import Image from "../../../components/blog/articleTitle/Image";
 import "./styles.css";
 import Paragraph from "../../../components/blog/text/Paragraph";
-import Subtitle from "../../../components/blog/text/Subtitle";
 import ArticleHeader from "../../../components/blog/articleTitle/ArticleHeader";
 
 export default function ArticleTwo() {
