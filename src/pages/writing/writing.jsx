@@ -1,7 +1,8 @@
-import Article from "../../components/home/ArticleItem";
 import "./styles.css";
 
 import { motion } from "framer-motion";
+
+import Article from "../../components/home/ArticleItem";
 import Header from "../../components/header/Header";
 
 export default function Writing() {
@@ -15,7 +16,7 @@ export default function Writing() {
       ),
       time: "05",
       folder: "article1",
-      route: "my-take-on-svelte",
+      route: "/writing/my-take-on-svelte",
       image: "image.png",
     },
     {
@@ -46,12 +47,12 @@ export default function Writing() {
       id: 4,
       title: () => (
         <>
-          What I cannot <em className="italic">create</em>, I do not understand
+          What I cannot <em className="italic">create</em> I do not understand
         </>
       ),
       time: "04",
       folder: "article1",
-      route: "my-take-on-svelte",
+      route: "/writing/what-i-cannot-create",
       image: "image.png",
     },
   ];
@@ -72,10 +73,14 @@ export default function Writing() {
 
         {articles.map((article, i) => (
           <motion.div
-            key={article.id}
-            initial={{ opacity: 0, translateY: 50 }}
-            animate={{ opacity: 1, translateY: 0 }}
-            transition={{ duration: 0.8, delay: i * 0.1, ease: "easeInOut" }}
+            // key={article.id}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            // initial={{ opacity: 0, translateY: 50 }}
+            // animate={{ opacity: 1, translateY: 0 }}
+            // transition={{ duration: 0.8, delay: i * 0.1, ease: "easeInOut" }}
             className="insideArticle"
           >
             <Article
@@ -87,7 +92,6 @@ export default function Writing() {
             />
           </motion.div>
         ))}
-
         {articles.length > 3 && <div className="spacer"></div>}
       </div>
     </div>

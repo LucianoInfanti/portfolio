@@ -1,8 +1,9 @@
 import Header from "../../../components/header/Header";
-import ArticleTitle from "../../../components/blog/articleTitle/ArticleTitle";
 
 import "./styles.css";
 import Paragraph from "../../../components/blog/text/Paragraph";
+import Subtitle from "../../../components/blog/text/Subtitle";
+import ArticleHeader from "../../../components/blog/articleTitle/ArticleHeader";
 
 export default function ArticleOne() {
   return (
@@ -11,18 +12,37 @@ export default function ArticleOne() {
         <Header />
       </div>
       <div className="article-content-container">
-        <ArticleTitle
+        <div className="title-position">
+          {/* <ArticleTitle
+            title={
+              <>
+                My take on <em className="title-italic">Svelte</em>
+              </>
+            }
+            subtitle="Published — 02/09/2022"
+          /> */}
+        </div>
+
+        <ArticleHeader
           title={
             <>
               My take on <em className="title-italic">Svelte</em>
             </>
           }
+          subtitle={"Published — 02/09/2022"}
           folder="article1"
-          subtitle="Published · 02/09/2022"
           image="main.png"
           description="[1] All rights to Caltech."
+          alt="a"
+          speed={0.1}
         />
 
+        {/* <Image
+          folder="article1"
+          image="main.png"
+          alt="a"
+          description="[1] All rights to Caltech."
+        /> */}
         <div>
           <Paragraph
             text={
@@ -47,7 +67,6 @@ export default function ArticleOne() {
               </>
             }
           />
-          <Paragraph text="But there is a caveat." />
           <Paragraph
             text={
               <>

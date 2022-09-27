@@ -3,7 +3,8 @@
     max-width: 575px;
     margin-top: 70px;
     font-size: var(--fs-500);
-    line-height: 140%;
+    line-height: 1.5em;
+    font-family: "AGNext";
 }
 
 .article-section-title {

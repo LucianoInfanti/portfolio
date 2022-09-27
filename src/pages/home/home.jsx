@@ -65,7 +65,7 @@ export default function Home() {
           <AnimatedTextWord text="      based in São Paulo, Brazil" />
         </div>
         <div className="row-three">
-          <AnimatedTextWord text={"        currently at Work & Co"} />
+          <AnimatedTextWord text={"          currently at Work & Co"} />
         </div>
       </p>
 

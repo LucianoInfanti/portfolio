@@ -1,11 +1,13 @@
 .image-description {
-	font-size: 14px;
-	opacity: 0.5;
-	margin-top: 8px;
-	max-width: 575px;
+    font-size: 14px;
+    opacity: 0.5;
+    margin-top: 8px;
+    max-width: 575px;
+    font-family: "AGNext";
+
 }
 
 .image {
-	width: 575px;
-	overflow: hidden;
+    width: 450px;
+    overflow: hidden;
 }

@@ -29,8 +29,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  /* Blog utility classes */
-  --section-title: var(--fs-600);
 }
 
 [data-theme='dark'] {
@@ -71,6 +69,18 @@ html:focus-within {
 }
 
 
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
 a {
   text-decoration: none;
   position: relative;
@@ -92,6 +102,8 @@ body {
   /* overflow: scroll; */
   font-family: 'AdobeGaramond', serif;
   line-height: var(--lh-300);
+  overscroll-behavior: none;
+
 
 }
 
@@ -119,14 +131,21 @@ body {
 @font-face {
   font-family: "AdobeGaramond";
   src: local("AdobeGaramond"),
-    url("./fonts/AdobeGaramond.ttf");
+    url("./fonts/Migra-Extralight.ttf");
   font-weight: regular;
 }
 
 @font-face {
   font-family: "AdobeGaramondItalic";
   src: local("AdobeGaramondItalic"),
-    url("./fonts/AdobeGaramondItalic.ttf");
+    url("./fonts/MigraItalic-ExtralightItalic.ttf");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "AGNext";
+  src: local("AGNext"),
+    url("./fonts/AGNextLight.otf");
   font-weight: regular;
 }
 
@@ -167,27 +186,13 @@ a.article-link:hover {
   background-color: rgb(221, 221, 221);
 }
 
-
-.sectionTtitle {
-  font-size: var(--section-title);
-}
-
-
-
 .italic {
   font-family: "AdobeGaramondItalic", sans-serif;
   font-size: 40px;
 }
 
 
-button,
-input[type="submit"],
-input[type="reset"] {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
+.title-italic {
+  font-family: "AdobeGaramondItalic", sans-serif;
+  font-size: 118px;
 }

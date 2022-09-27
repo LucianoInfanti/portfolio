@@ -1,7 +1,14 @@
+## Kown bugs
+
+- On a certain scroll depth, Writing link within Article pages will not work
+
+## Solved bugs
+
+- ~~Articles with small first paragraphs will cause a bug if the title is 2 lines long ~~
+
 ## To do
 
 - Dark Mode
-- Remove the staggered animation at /Writing and use only a fade
 - Pass all data to `Data.json`
 - Take a pass at all animations and standardize motion tokens
 - Create the `<Image/>`component and its variations
@@ -11,6 +18,8 @@
 - Home and Writing have different font sizes
 - Like counter for posts
 - Back to the top / Next / Previous
+- See Shivs interview and do a header similar to that!
+- Use `{children}` to make sure I can use the appearing animation
 
 ## To consider
 
@@ -18,9 +27,10 @@
 - Is it possible to add the like counter without a back-end
 - Flip interaction for links
 - Cool hover for images
+- Progress scroll bar?
 - Show image on hover @ /Writing
 - Add Work / About pages
-- Add https://codesandbox.io/s/ro92c5?file=/fragmentShader.js&from-sandpack=true
+- ~~ Add https://codesandbox.io/s/ro92c5?file=/fragmentShader.js&from-sandpack=true ~~
 
 ## Done
 
@@ -29,3 +39,4 @@
 - ~~Review the z-index in the article page ~~
 - ~~Review the stagger animation, it looks wrong, the timmings are most likely off~~
 - ~~Find a hook to avoid rendering `<Header/>` multiple times~~
+- Remove the staggered animation at /Writing and use only a fade

@@ -39,9 +39,9 @@ export default function Header() {
         >
           <NavLink
             to="/writing"
-            // style={({ isActive }) => ({
-            //   textDecoration: isActive ? "line-through" : "none",
-            // })}
+            style={({ isActive }) => ({
+              textDecoration: isActive ? "line-through" : "none",
+            })}
           >
             Writing
           </NavLink>

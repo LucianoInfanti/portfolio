@@ -1,7 +1,9 @@
 import "./image.css";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
-const image = (props) => {
+
+
+const Image = (props) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -11,8 +13,8 @@ const image = (props) => {
     >
       <div className="crop">
         <motion.img
-          whileHover={{ scale: 1.01 }}
-          transition={{ duration: 0.3 }}
+          // whileHover={{ scale: 1.01 }}
+          // transition={{ duration: 0.3 }}
           src={`/images/${props.folder}/${props.image}`}
           alt={props.alt}
           className="image"
@@ -23,4 +25,4 @@ const image = (props) => {
   );
 };
 
-export default image;
+export default Image;

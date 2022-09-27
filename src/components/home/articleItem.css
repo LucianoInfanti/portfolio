@@ -4,6 +4,7 @@
   justify-items: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+  margin-bottom: 24px;
 }
 
 .reading-time {
@@ -14,7 +15,6 @@
 
 
 .article-wrapper {
-  margin-bottom: 32px;
 }
 
 .article-wrapper:hover {
@@ -23,8 +23,4 @@
 
 .articleTitle {
   font-size: 40px;
-}
-
-.wrapper:hover {
-  opacity: 0.5;
 }

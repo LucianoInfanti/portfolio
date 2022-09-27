@@ -1,12 +1,3 @@
-.title-italic {
-	font-family: "AdobeGaramondItalic", sans-serif;
-	font-size: 64px;
-}
-
-.header {
-	position: sticky;
-}
-
 .spacer {
-	height: 20vh;
+    height: 20vh;
 }
