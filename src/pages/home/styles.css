@@ -22,11 +22,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
-.article-content-container{
+.article-content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.bubble {
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 600px;
+  /* opacity: 0.2; */
 }

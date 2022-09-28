@@ -4,6 +4,18 @@ import { motion } from "framer-motion";
 const AnimatedTextWord = ({ text }) => {
   const words = text.split(" ");
 
+  //maybe some kind of setState here? and ternary operator down there  // function co(text) {
+  //   if (words === "Work" || "&" || "Co") {
+  //     const newWord = words;
+  //     return (
+  //       isItalic = true;
+  //     )
+  //   } else {
+  //     return words;
+  //   }
+
+  // }
+
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({

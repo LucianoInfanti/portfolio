@@ -2,14 +2,12 @@ import "./articleItem.css";
 import { motion } from "framer-motion";
 
 export default function Article(props) {
-
-  
   return (
     <motion.div
       className="wrapper"
       whileHover={{
         scale: 0.98,
-        opacity: 0.3,
+
         transition: { duration: 0.3 },
       }}
     >

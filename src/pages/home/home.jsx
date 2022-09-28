@@ -2,6 +2,7 @@ import Header from "../../components/header/Header";
 import "./styles.css";
 import { motion } from "framer-motion";
 import AnimatedTextWord from "../../components/AnimatedTextWords";
+import Bubble from "../../components/Bubble";
 
 export default function Home() {
   const articles = [
@@ -79,18 +80,21 @@ export default function Home() {
         <a target="blank" href="https://www.linkedin.com/in/luciano-infanti/">
           LinkedIn
         </a>
-        <span>,</span>
+        <span>, </span>
         <a target="blank" href="https://github.com/LucianoInfanti/portfolio">
           GitHub
         </a>
-        <span>,</span>
+        <span>, </span>
         <a target="blank" href="https://savee.it/lucianoinfanti/">
           Savee
         </a>
-        <span>,</span>
+        <span>, </span>
         <a target="blank" href="https://dribbble.com/LucianoInfanti">
           Dribbble
         </a>
+      </motion.div>
+      <motion.div className="bubble">
+        <Bubble />
       </motion.div>
     </div>
   );
