@@ -37,7 +37,6 @@
 - ~~Remove the staggered animation at /Writing and use only a fade ~~
 - ~~Add https://codesandbox.io/s/ro92c5?file=/fragmentShader.js&from-sandpack=true ~~
 - ~~In prod: investigate weird routing realods ~~
-- ~~See Shivs interview and do a header similar to that!~~
 - ~~Home and Writing have different font sizes~~
 - ~~Progress scroll bar? ~~
 - ~~ Add `<NavLink/>` as a `prop` to the header component so I can remove it from the article page (?) ~~
