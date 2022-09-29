@@ -2,8 +2,9 @@ import Header from "../../../components/header/Header";
 
 import "./styles.css";
 import Paragraph from "../../../components/blog/text/Paragraph";
-import Subtitle from "../../../components/blog/text/Subtitle";
 import ArticleHeader from "../../../components/blog/articleTitle/ArticleHeader";
+import ReadingItem from "../../../components/blog/references/ReadingItem";
+import ReadMore from "../../../components/blog/readmore/ReadMore";
 
 export default function ArticleOne() {
   return (
@@ -22,7 +23,6 @@ export default function ArticleOne() {
             subtitle="Published — 02/09/2022"
           /> */}
         </div>
-
         <ArticleHeader
           title={
             <>
@@ -36,7 +36,6 @@ export default function ArticleOne() {
           alt="a"
           speed={0.1}
         />
-
         {/* <Image
           folder="article1"
           image="main.png"
@@ -70,19 +69,19 @@ export default function ArticleOne() {
           <Paragraph
             text={
               <>
-                Even though it's simpler than React to pick up(yeah, I'm talking
-                about you <em className="highlight">useEffect</em>), Svelte
-                lacks guides and content — which is something I definitely need
-                a lot as I can barely do fine on my own because I lack the
-                skills of an experienced programmer. Guidance is important to me
-                at this moment. Even worse, SvelteKit has just now released
-                breaking changes and because of that most of the content one
-                could find around the internet is now outdated and is largely
-                useless. That's not a huge problem if you have time to wait
-                because people are not gonna hurry and create a lot of tutorials
-                for SvelteKit before the stable version 1.0. Until then, there
-                is little to no content that is useful for noobs like me. So we
-                just wait.
+                Even though it's simpler than React to pick up (yeah, I'm
+                talking about you <em className="highlight">useEffect</em>),
+                Svelte lacks guides and content — which is something I
+                definitely need a lot as I can barely do fine on my own because
+                I lack the skills of an experienced programmer. Guidance is
+                important to me at this moment. Even worse, SvelteKit has just
+                now released breaking changes and because of that most of the
+                content one could find around the internet is now outdated and
+                is largely useless. That's not a huge problem if you have time
+                to wait because people are not gonna hurry and create a lot of
+                tutorials for SvelteKit before the stable version 1.0. Until
+                then, there is little to no content that is useful for noobs
+                like me. So we just wait.
               </>
             }
           />
@@ -93,6 +92,29 @@ export default function ArticleOne() {
             speed. I'll wait a little longer for the final stable 1.0 version
             and the guides to come. For now, I'll stick to React."
           />
+        </div>
+
+        <div className="section-outro">
+          <div className="section-references">
+            <div className="divider"></div>
+            <h3>References</h3>
+            <ReadingItem
+              number="1"
+              text="How people usually work together by Luciano, I."
+              link="google.com"
+            />
+            <ReadingItem
+              number="2"
+              text="Famous articles by you."
+              link="google.com"
+            />
+          </div>
+          <div className="section-readmore">
+          <div className="divider"></div>
+            <h3>Keep reading</h3>
+            <ReadMore link="google.com" articleTitle="Protopie good practices"/>
+            <ReadMore link="google.com" articleTitle="What I cannot create I don't understand"/>
+          </div>
         </div>
         <div className="spacer"></div>
       </div>

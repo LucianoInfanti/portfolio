@@ -1,8 +1,6 @@
 import "./image.css";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-
-
 const Image = (props) => {
   return (
     <motion.div
@@ -11,15 +9,19 @@ const Image = (props) => {
       transition={{ delay: 0.1, ease: "easeOut", duration: 0.6 }}
       className="image-container"
     >
-      <div className="crop">
+      <motion.div
+        className="crop"
+        whileHover={{ scale: 0.99 }}
+        transition={{ duration: 0.3 }}
+      >
         <motion.img
-          // whileHover={{ scale: 1.01 }}
+          // whileHover={{ scale: 1.3 }}
           // transition={{ duration: 0.3 }}
           src={`/images/${props.folder}/${props.image}`}
           alt={props.alt}
           className="image"
         />
-      </div>
+      </motion.div>
       <p className="image-description">{props.description}</p>
     </motion.div>
   );

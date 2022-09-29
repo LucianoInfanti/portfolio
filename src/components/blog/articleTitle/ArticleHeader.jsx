@@ -26,7 +26,6 @@ const FinalImage = (props) => {
   const { scrollYProgress } = useScroll();
   const transform = useTransform(scrollYProgress, [0, 1], [0, 100 * speed]);
 
-
   return (
     <>
       <motion.div

@@ -49,14 +49,11 @@ export default function ArticleTwo() {
                 This sentence was said by Richard Feynman. It was found written
                 on his whiteboard after he died — this was one of the last
                 things his brilliant mind conceived. And I find myself thinking
-                about its meaning every now and then since I first read it. I
-                tried Svelte for the first time this year. And honestly, it was
-                great. I was able to understand it much more easily than React.
-                It feels like Svelte is super simple to get — what I definitely
-                appreciate as someone who is not a programmer per se. You see, I
-                like to learn code in my free time so learning very difficult
-                concepts takes longer for me. That's why I feel like Svelte is
-                great. Oh, another thing to mention, the{" "}
+                about its meaning every now and then. Its because of it I
+                decided to create this website (blog?). I wanted to code it
+                myself so I could study technology and programming a bit. It is
+                my opinion that understanding code is important for designers.
+                How can I claim to know design.
                 <a
                   href="https://www.reddit.com/r/sveltejs/"
                   className="article-link"

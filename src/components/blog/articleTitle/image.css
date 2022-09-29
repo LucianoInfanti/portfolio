@@ -4,10 +4,15 @@
     margin-top: 8px;
     max-width: 575px;
     font-family: "AGNext";
-
+    margin-bottom: 80px;
 }
 
 .image {
     width: 450px;
     overflow: hidden;
+}
+
+.crop {
+    overflow: hidden;
+    overflow-y: hidden;
 }

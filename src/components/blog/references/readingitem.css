@@ -1,0 +1,31 @@
+.item-wrapper {
+    margin-top: 10px;
+    font-family: 'AGNext', sans-serif;
+}
+
+
+.number-indicator {
+    color: #a3a3a3;
+    text-decoration: dotted;
+    line-height: 34px;
+    margin-right: 16px;
+    font-size: 23px;
+
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+}
+
+.reference-text {
+    line-height: 34px;
+    font-size: 23px;
+}
+
+.number-indicator:hover{
+	text-decoration: underline;
+}

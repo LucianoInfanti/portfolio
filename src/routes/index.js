@@ -1,7 +1,7 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Home from "../pages/home/home";
 import ArticleOne from "../pages/blog/My take on svelte";
-import ArticleTwo from "../pages/blog/Protopie good practices";
+import ArticleTwo from "../pages/blog/What I cannot create I dont understand";
 import Writing from "../pages/writing/writing";
 import Header from "../components/header/Header";
 import Bubble from "../components/Bubble";

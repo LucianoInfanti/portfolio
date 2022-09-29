@@ -1,7 +1,7 @@
 .article-body {
     text-indent: 1em;
     max-width: 575px;
-    margin-top: 70px;
+    margin-top: 40px;
     font-size: var(--fs-500);
     line-height: 1.5em;
     font-family: "AGNext";
@@ -12,12 +12,9 @@
     font-size: var(--fs-600);
 }
 
-
-
 .article-body~.article-body {
-    margin-top: 30px;
+    margin-top: 2px;
 }
-
 
 .article-section-title~.article-body {
     margin-top: 30px;
