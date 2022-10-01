@@ -8,9 +8,13 @@ const articles = [
     ),
     time: "05",
     folder: "article1",
-    route: "/writing/my-take-on-svelte",
+    route: "/my-take-on-svelte",
     image: "image.png",
-    references: {}
+    references: [
+      { text: "From Google", link: "google.com" },
+      { text: "From API", link: "google.com" },
+      { text: "From X", link: "google.com" },
+    ],
   },
   {
     id: 2,
@@ -20,9 +24,14 @@ const articles = [
       </>
     ),
     time: "09",
-    folder: "article1",
+    folder: "article",
     route: "my-take-on-svelte",
     image: "image.png",
+    references: [
+      { text: "From Google", link: "google.com" },
+      { text: "From API", link: "google.com" },
+      { text: "From X", link: "google.com" },
+    ],
   },
   {
     id: 3,
@@ -35,6 +44,11 @@ const articles = [
     folder: "article1",
     route: "my-take-on-svelte",
     image: "image.png",
+    references: [
+      { text: "From Google", link: "google.com" },
+      { text: "From API", link: "google.com" },
+      { text: "From X", link: "google.com" },
+    ],
   },
   {
     id: 4,
@@ -45,8 +59,13 @@ const articles = [
     ),
     time: "04",
     folder: "article1",
-    route: "/writing/what-i-cannot-create",
+    route: "/what-i-cannot-create",
     image: "image.png",
+    references: [
+      { text: "From Google", link: "google.com" },
+      { text: "From API", link: "google.com" },
+      { text: "From X", link: "google.com" },
+    ],
   },
 ];
 

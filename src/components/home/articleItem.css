@@ -8,9 +8,9 @@
 }
 
 .reading-time {
-  font-size: 16px;
   margin-top: -15px;  
   margin-left: 6px;
+  font-size: var(--small);
 }
 
 
@@ -22,5 +22,4 @@
 }
 
 .articleTitle {
-  font-size: 40px;
 }

@@ -5,18 +5,17 @@
   --clr-neutral-200: #999999;
   --clr-body: #fff;
 
-  --fs-300: 1rem;
-  /* 16px : read time */
-  --fs-400: 1.125rem;
-  /* 18px : home page + nav items */
-  --fs-500: 1.213rem;
   /* 21px : article body */
-  --fs-600: 1.75rem;
-  /* 28px : article sections */
-  --fs-650: 2rem;
-  /* 32px: article title mobile */
-  --fs-700: 3rem;
-  /* 48px : article title only*/
+  --body: 1.2rem;
+
+  --h3: 1.5rem;
+
+  /* 118px : article title only*/
+  --article-title: 3.375rem;
+
+  --small: 0.8rem;
+
+
 
   --lh-300: 150%;
   /* home page + nav items */
@@ -31,18 +30,11 @@
 
 }
 
-[data-theme='dark'] {
-  --text: white;
-  --background: black;
-}
-
-
 /* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font-size: 19px;
 }
 
 /* Remove default margin */
@@ -65,9 +57,7 @@ ol[role='list'] {
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
-
 }
-
 
 button,
 input[type="submit"],
@@ -83,16 +73,8 @@ input[type="reset"] {
 
 a {
   text-decoration: none;
-  position: relative;
   color: black;
 }
-
-
-
-em>.italic {
-  font-family: 'AdobeGaramondItalic', serif;
-}
-
 
 html,
 body {
@@ -100,11 +82,10 @@ body {
   background-color: var(--background);
   height: 100%;
   font-family: 'AdobeGaramond', serif;
-  line-height: var(--lh-300);
   overscroll-behavior: none;
-  font-optical-sizing: none;
-  font-variation-settings: 'slnt'0;
-  font-variation-settings: 'opsz'100;
+  line-height: var(--lh-400);
+  font-size: var(--body);
+
 }
 
 /* Make images easier to work with */
@@ -131,7 +112,7 @@ body {
 @font-face {
   font-family: "AdobeGaramond";
   src: local("AdobeGaramond"),
-    url("./fonts/Migra-Extralight.ttf");
+    url("./fonts/AdobeGaramond.ttf");
   font-weight: regular;
   font-display: block
 }
@@ -139,7 +120,7 @@ body {
 @font-face {
   font-family: "AdobeGaramondItalic";
   src: local("AdobeGaramondItalic"),
-    url("./fonts/MigraItalic-ExtralightItalic.ttf");
+    url("./fonts/AdobeGaramondItalic.ttf");
   font-weight: regular;
   font-display: block
 }
@@ -166,10 +147,7 @@ body {
   text-decoration: underline;
   color: blue;
   font-family: 'AdobeGaramondItalic', serif;
-  /* Talvez tirar isso aqui */
-  font-size: 24px;
 }
-
 
 a.article-link {
   color: black;
@@ -184,7 +162,6 @@ a.article-link:hover {
 
 .highlight {
   font-family: FiraCode;
-  font-size: 15px;
   padding-left: 5px;
   padding-right: 5px;
   letter-spacing: -1px;
@@ -193,25 +170,17 @@ a.article-link:hover {
 
 .italic {
   font-family: "AdobeGaramondItalic", sans-serif;
-  font-size: 40px;
 }
-
-
-.title-italic {
-  font-family: "AdobeGaramondItalic", sans-serif;
-  font-size: 118px;
-}
-
 
 .divider {
   background-color: #ccc;
   height: 1px;
   width: 575px;
   margin-top: 70px;
-  margin-bottom: 70px;;
+  margin-bottom: 70px;
+  ;
 }
 
 h3 {
-  font-size: 32px;
   margin-bottom: 24px;
 }

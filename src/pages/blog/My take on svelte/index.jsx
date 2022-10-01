@@ -5,8 +5,11 @@ import Paragraph from "../../../components/blog/text/Paragraph";
 import ArticleHeader from "../../../components/blog/articleTitle/ArticleHeader";
 import ReadingItem from "../../../components/blog/references/ReadingItem";
 import ReadMore from "../../../components/blog/readmore/ReadMore";
+import articles from "../../../data/Data";
 
 export default function ArticleOne() {
+  console.log(articles[0].references[0].text);
+
   return (
     <div className="article-container">
       <div className="header">
@@ -98,6 +101,15 @@ export default function ArticleOne() {
           <div className="section-references">
             <div className="divider"></div>
             <h3>References</h3>
+            {/* 
+            {articles.map((article, i) => (
+              <ReadingItem
+                key={article.id}
+                number={i}
+                text={article[i].references[i].text}
+                link={article[i].references[i].link}
+              />
+            ))} */}
             <ReadingItem
               number="1"
               text="How people usually work together by Luciano, I."
@@ -110,10 +122,16 @@ export default function ArticleOne() {
             />
           </div>
           <div className="section-readmore">
-          <div className="divider"></div>
+            <div className="divider"></div>
             <h3>Keep reading</h3>
-            <ReadMore link="google.com" articleTitle="Protopie good practices"/>
-            <ReadMore link="google.com" articleTitle="What I cannot create I don't understand"/>
+            <ReadMore
+              link="google.com"
+              articleTitle="Protopie good practices"
+            />
+            <ReadMore
+              link="google.com"
+              articleTitle="What I cannot create I don't understand"
+            />
           </div>
         </div>
         <div className="spacer"></div>

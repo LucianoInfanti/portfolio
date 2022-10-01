@@ -1,37 +1,38 @@
 .header {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
 }
 
 .circle {
 
-	width: 8px;
-	height: 8px;
-	background-color: black;
-	border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
 }
 
 .logo {
-	width: 10%;
-	margin-left: 30px;
-}
-.circle-wrapper{
-	width: 10%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
-	margin-right: 30px;
+    width: 10%;
+    margin-left: 30px;
 }
 
-.circle-wrapper:hover{
-	cursor: pointer;
+.circle-wrapper {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    margin-right: 30px;
 }
 
-.headerWrapper{
-	position: fixed;
-	top: 30px;
-	width: 100%;
+.circle-wrapper:hover {
+    cursor: pointer;
+}
+
+.headerWrapper {
+    position: fixed;
+    top: 30px;
+    width: 100%;
 }
