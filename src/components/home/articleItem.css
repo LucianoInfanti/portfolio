@@ -4,22 +4,20 @@
   justify-items: flex-start;
   align-items: flex-start;
   align-content: flex-start;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .reading-time {
-  margin-top: -15px;  
+  margin-top: -15px;
   margin-left: 6px;
   font-size: var(--small);
 }
 
-
-.article-wrapper {
-}
 
 .article-wrapper:hover {
   cursor: pointer;
 }
 
 .articleTitle {
+  font-size: 40px;
 }

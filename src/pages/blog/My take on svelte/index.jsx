@@ -1,14 +1,19 @@
-import Header from "../../../components/header/Header";
-
+// Data and styles
 import "./styles.css";
+import articles from "../../../data/Data";
+
+// Layout-related components
+import Header from "../../../components/header/Header";
+import ReadMore from "../../../components/blog/readmore/ReadMore";
+
+// Text-related components
 import Paragraph from "../../../components/blog/text/Paragraph";
 import ArticleHeader from "../../../components/blog/articleTitle/ArticleHeader";
 import ReadingItem from "../../../components/blog/references/ReadingItem";
-import ReadMore from "../../../components/blog/readmore/ReadMore";
-import articles from "../../../data/Data";
 
 export default function ArticleOne() {
-  console.log(articles[0].references[0].text);
+  // Update `articleNumber` accordingly. It should match the number in the component's name - 1;
+  const articleNumber = 0;
 
   return (
     <div className="article-container">
@@ -16,16 +21,6 @@ export default function ArticleOne() {
         <Header />
       </div>
       <div className="article-content-container">
-        <div className="title-position">
-          {/* <ArticleTitle
-            title={
-              <>
-                My take on <em className="title-italic">Svelte</em>
-              </>
-            }
-            subtitle="Published — 02/09/2022"
-          /> */}
-        </div>
         <ArticleHeader
           title={
             <>
@@ -35,16 +30,11 @@ export default function ArticleOne() {
           subtitle={"Published — 02/09/2022"}
           folder="article1"
           image="main.png"
-          description="[1] All rights to Caltech."
+          description="By Author."
           alt="a"
           speed={0.1}
         />
-        {/* <Image
-          folder="article1"
-          image="main.png"
-          alt="a"
-          description="[1] All rights to Caltech."
-        /> */}
+
         <div>
           <Paragraph
             text={
@@ -98,29 +88,21 @@ export default function ArticleOne() {
         </div>
 
         <div className="section-outro">
-          <div className="section-references">
-            <div className="divider"></div>
-            <h3>References</h3>
-            {/* 
-            {articles.map((article, i) => (
-              <ReadingItem
-                key={article.id}
-                number={i}
-                text={article[i].references[i].text}
-                link={article[i].references[i].link}
-              />
-            ))} */}
-            <ReadingItem
-              number="1"
-              text="How people usually work together by Luciano, I."
-              link="google.com"
-            />
-            <ReadingItem
-              number="2"
-              text="Famous articles by you."
-              link="google.com"
-            />
-          </div>
+          {articles[articleNumber].references.length > 0 && (
+            <div className="section-references">
+              <div className="divider"></div>
+              <h3>References</h3>
+              {articles[articleNumber].references.map((reference, index) => (
+                <ReadingItem
+                  key={index}
+                  number={index + 1}
+                  text={reference.text}
+                  link={reference.link}
+                />
+              ))}
+            </div>
+          )}
+
           <div className="section-readmore">
             <div className="divider"></div>
             <h3>Keep reading</h3>

@@ -9,7 +9,6 @@ export default function ApplicationRoutes() {
     <BrowserRouter>
       <Routes element={<Header />}>
         <Route path="/" element={<Home />} />
-
         <Route path="/my-take-on-svelte" element={<ArticleOne />} />
         <Route path="/what-i-cannot-create" element={<ArticleTwo />} />
       </Routes>

@@ -20,11 +20,27 @@ export default function Header(props) {
     hidden: { opacity: 0 },
   };
 
+  const defaultMotion = {
+    visible: {
+      opacity: 1,
+      transition: {
+        ease: [0.6, 0.01, -0.05, 0.95],
+        duration: 1.2,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      transition: {
+        ease: [0.6, 0.01, -0.05, 0.95],
+        duration: 1.2,
+      },
+    },
+  };
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ ease: "easeInOut", duration: 0.8 }}
+      variants={defaultMotion}
+      initial="hidden"
+      animate="visible"
       className="headerWrapper"
     >
       <div className="header">
@@ -35,14 +51,14 @@ export default function Header(props) {
         <motion.p
           variants={scrollVariants}
           animate={Hidden ? "hidden" : "visible"}
-          transition={{ ease: "easeIn", duration: 0.2 }}
+          transition={{ ease: "easeOut", duration: 0.4 }}
           className="introduction"
         >
           {props.introduction}
         </motion.p>
 
         <div className="circle-wrapper">
-          <button className="circle"></button>
+          <button className="circle">✱</button>
         </div>
       </div>
     </motion.div>

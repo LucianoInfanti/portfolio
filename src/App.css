@@ -76,6 +76,10 @@ a {
   color: black;
 }
 
+a:hover {
+  color: #ccc
+}
+
 html,
 body {
   color: var(--text);
@@ -164,7 +168,8 @@ a.article-link:hover {
   font-family: FiraCode;
   padding-left: 5px;
   padding-right: 5px;
-  letter-spacing: -1px;
+  font-size: var(--small);
+  letter-spacing: -1.2px;
   background-color: rgb(221, 221, 221);
 }
 
