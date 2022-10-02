@@ -41,6 +41,7 @@ Incremental progress is how I'm tackling this challenge. So there will always be
 
 ## Done
 
+<<<<<<< HEAD
 - Add 'references' as an object within `Data.js`
 - Loop through the new ref object to show them on articles
 - Pass all data to `Data.json`
@@ -55,3 +56,16 @@ Incremental progress is how I'm tackling this challenge. So there will always be
 - Home and Writing have different font sizes
 - Progress scroll bar?
 - Add `<NavLink/>` as a `prop` to the header component so I can remove it from the article page (?)
+=======
+- ~~"Active Route" trought React Router (possibly using `<NavLink>`) ~~
+- ~~When start to scroll hide 'Writing'~~
+- ~~Review the z-index in the article page ~~
+- ~~Review the stagger animation, it looks wrong, the timmings are most likely off~~
+- ~~Find a hook to avoid rendering `<Header/>` multiple times~~
+- ~~Remove the staggered animation at /Writing and use only a fade ~~
+- ~~Add https://codesandbox.io/s/ro92c5?file=/fragmentShader.js&from-sandpack=true ~~
+- ~~In prod: investigate weird routing realods ~~
+- ~~Home and Writing have different font sizes~~
+- ~~Progress scroll bar? ~~
+- ~~ Add `<NavLink/>` as a `prop` to the header component so I can remove it from the article page (?) ~~
+>>>>>>> ff8e390da325bc9794166d67e6715006a1741e89
