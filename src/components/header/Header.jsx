@@ -58,7 +58,7 @@ export default function Header(props) {
         </motion.p>
 
         <div className="circle-wrapper">
-          <button className="circle">✱</button>
+          <button className="circle"></button>
         </div>
       </div>
     </motion.div>

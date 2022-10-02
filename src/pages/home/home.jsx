@@ -82,13 +82,13 @@ export default function Home() {
           className="socialWrapper"
         >
           <a target="blank" href="https://www.linkedin.com/in/luciano-infanti/">
-            — LinkedIn
+            LinkedIn
           </a>
           <a target="blank" href="https://github.com/LucianoInfanti/portfolio">
-            — GitHub
+            GitHub
           </a>
           <a target="blank" href="https://savee.it/lucianoinfanti/">
-            — Savee
+            Savee
           </a>
         </motion.div>
       </div>

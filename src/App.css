@@ -76,9 +76,11 @@ a {
   color: black;
 }
 
-a:hover {
-  color: #ccc
-}
+/* a[class]:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+} */
 
 html,
 body {
