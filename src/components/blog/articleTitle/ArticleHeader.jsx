@@ -47,7 +47,7 @@ const FinalImage = (props) => {
 export default function ArticleHeader(props) {
   return (
     <>
-      <Title speed={10} title={props.title} subtitle={props.subtitle} />
+      <Title speed={6} title={props.title} subtitle={props.subtitle} />
       <FinalImage
         speed={-0.4}
         folder={props.folder}

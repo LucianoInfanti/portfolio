@@ -1,21 +1,22 @@
 :root {
   --text: black;
-  --background: white;
+  --background: #F6F4F2;
   --clr-neutral-100: #e5e5e5;
   --clr-neutral-200: #999999;
   --clr-body: #fff;
 
   /* 21px : article body */
-  --body: 1.2rem;
-
-  --h3: 1.5rem;
+  --body: 1rem;
+  --article-paragraph: 1.25rem;
+  --h3: 1.6rem;
 
   /* 118px : article title only*/
-  --article-title: 3.375rem;
+  --article-title: 6rem;
 
-  --small: 0.8rem;
+  --small: 0.9rem;
 
 
+  --lh-title: 100%;
 
   --lh-300: 150%;
   /* home page + nav items */
@@ -41,22 +42,6 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-ul,
-li {
-  list-style-type: none;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
 }
 
 button,
@@ -87,7 +72,7 @@ body {
   color: var(--text);
   background-color: var(--background);
   height: 100%;
-  font-family: 'AdobeGaramond', serif;
+  font-family: 'AGNext', serif;
   overscroll-behavior: none;
   line-height: var(--lh-400);
   font-size: var(--body);
@@ -107,13 +92,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
 
 @font-face {
   font-family: "AdobeGaramond";
@@ -140,6 +118,14 @@ body {
 }
 
 @font-face {
+  font-family: "AGNextItalic";
+  src: local("AGNextItalic"),
+    url("./fonts/AGNextLightIta.otf");
+  font-weight: regular;
+  font-display: block
+}
+
+@font-face {
   font-family: "FiraCode";
   src: local("FiraCode"),
     url("./fonts/FiraCode-Regular.ttf");
@@ -149,16 +135,13 @@ body {
 
 /* Global Article-related CSS */
 
-.article-link {
-  text-decoration: underline;
-  color: blue;
-  font-family: 'AdobeGaramondItalic', serif;
-}
+
 
 a.article-link {
   color: black;
   text-decoration: none;
   border-bottom: 1px dotted black;
+  font-family: "AdobeGaramondItalic", serif;
 }
 
 a.article-link:hover {
@@ -167,7 +150,7 @@ a.article-link:hover {
 }
 
 .highlight {
-  font-family: FiraCode;
+  font-family: 'FiraCode';
   padding-left: 5px;
   padding-right: 5px;
   font-size: var(--small);
@@ -176,7 +159,7 @@ a.article-link:hover {
 }
 
 .italic {
-  font-family: "AdobeGaramondItalic", sans-serif;
+  font-family: "AGNextItalic", sans-serif;
 }
 
 .divider {
@@ -189,5 +172,16 @@ a.article-link:hover {
 }
 
 h3 {
-  margin-bottom: 24px;
+  margin-bottom: 10px;
+  font-family: "AdobeGaramondItalic", serif;
+  font-size: var(--body);
+
+}
+
+.title-italic {
+	font-family: "AGNextItalic", sans-serif;
+}
+
+.spacer {
+	height: 20vh;
 }

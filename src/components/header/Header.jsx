@@ -45,7 +45,7 @@ export default function Header(props) {
     >
       <div className="header">
         <a href="/" className="logo">
-          Luciano Infanti
+          Luciano Infanti{" "}
         </a>
 
         <motion.p
@@ -55,10 +55,14 @@ export default function Header(props) {
           className="introduction"
         >
           {props.introduction}
+          {props.social}
         </motion.p>
 
         <div className="circle-wrapper">
-          <button className="circle"></button>
+          <div className="button-wrapper">
+           
+             {" "}<button className="circle"></button> {" "}
+          </div>
         </div>
       </div>
     </motion.div>

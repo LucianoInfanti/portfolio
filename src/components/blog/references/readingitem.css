@@ -6,21 +6,20 @@
 .number-indicator {
     color: #a3a3a3;
     text-decoration: dotted;
-    margin-right: 16px;
-
-
+    margin-right: 10px;
+    font-size: var(--article-paragraph);
 }
 
 .row {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-
 }
 
 .reference-text {
+    font-size: var(--article-paragraph);
 }
 
-.number-indicator:hover{
-	text-decoration: underline;
+.number-indicator:hover {
+    text-decoration: underline;
 }

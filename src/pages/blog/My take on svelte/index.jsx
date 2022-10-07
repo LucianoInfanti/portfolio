@@ -105,7 +105,7 @@ export default function ArticleOne() {
 
           <div className="section-readmore">
             <div className="divider"></div>
-            <h3>Keep reading</h3>
+            <h3 className="extra-section">Keep reading</h3>
             <ReadMore
               link="google.com"
               articleTitle="Protopie good practices"

@@ -1,21 +1,12 @@
 .introduction {
   margin-left: 30vw;
-  width: 420px;
+  width: 320px;
   position: absolute;
-}
-
-.socialWrapper {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  bottom: 30px;
-  right: 30px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-
   user-select: none;
 }
 
@@ -27,13 +18,13 @@
 }
 
 .period {
-  margin-bottom: 40px;
-  font-size: var(--small);
+  margin-bottom: 10px;
+  font-family: "AdobeGaramondItalic";
 }
 
 .articleWrapper {
   margin-left: 30vw;
-  margin-top: 40vh;
+  margin-top: 60vh;
 }
 
 .writing {

@@ -1,3 +1,9 @@
+.headerWrapper {
+    position: fixed;
+    top: 30px;
+    width: 100%;
+}
+
 .header {
     display: flex;
     width: 100%;
@@ -12,26 +18,30 @@
     border-radius: 50%;
 }
 
-.logo {
-    width: 10%;
-    margin-left: 30px;
-}
-
 .circle-wrapper {
     width: 10%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-
     margin-right: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .circle-wrapper:hover {
     cursor: pointer;
 }
 
-.headerWrapper {
+.logo {
+    width: 10%;
+    margin-left: 30px;
+}
+
+.socialWrapper {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     top: 30px;
-    width: 100%;
+    left: 70vw;
+    list-style-type: circle;
 }

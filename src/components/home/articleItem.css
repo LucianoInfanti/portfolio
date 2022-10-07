@@ -4,12 +4,13 @@
   justify-items: flex-start;
   align-items: flex-start;
   align-content: flex-start;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 
 .reading-time {
   margin-top: -15px;
   margin-left: 6px;
+  font-family: "AdobeGaramondItalic";
   font-size: var(--small);
 }
 
@@ -19,5 +20,6 @@
 }
 
 .articleTitle {
-  font-size: 40px;
+  font-size: var(--h3);
+  text-transform: uppercase;
 }

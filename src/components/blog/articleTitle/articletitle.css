@@ -2,13 +2,15 @@
     font-size: var(--article-title);
     letter-spacing: -3px;
     text-align: center;
-    padding-top: 35vh;
-
+    margin-top: 25vh;
+    line-height: var(--lh-title);
 }
 
 .subtitle {
     max-width: 575px;
     font-weight: 100;
+    font-size: var(--article-paragraph);
+    font-family: "AdobeGaramondItalic", sans-serif;
 }
 
 

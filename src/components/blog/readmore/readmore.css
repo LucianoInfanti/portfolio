@@ -4,4 +4,5 @@
 }
 
 .readmore-link {
+    font-size: var(--article-paragraph);
 }

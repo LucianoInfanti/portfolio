@@ -34,16 +34,35 @@ export default function Home() {
             .
           </>
         }
+        social={
+          <>
+            {" "}
+            <motion.div
+              variants={defaultMotion}
+              initial="hidden"
+              animate="visible"
+              className="socialWrapper"
+            >
+              <a
+                target="blank"
+                href="https://www.linkedin.com/in/luciano-infanti/"
+              >
+                LinkedIn
+              </a>
+              <a
+                target="blank"
+                href="https://github.com/LucianoInfanti/portfolio"
+              >
+                GitHub
+              </a>
+              <a target="blank" href="https://savee.it/lucianoinfanti/">
+                Savee
+              </a>
+            </motion.div>
+          </>
+        }
       />
 
-      <motion.div
-        variants={defaultMotion}
-        initial="hidden"
-        animate="visible"
-        className="writing"
-      >
-        Writing
-      </motion.div>
       <div className="articleWrapper">
         <motion.p
           variants={defaultMotion}
@@ -51,7 +70,7 @@ export default function Home() {
           animate="visible"
           className="period"
         >
-          2021 — 2022
+          Writing{" "}
         </motion.p>
 
         {articles.map((article, i) => (
@@ -74,23 +93,6 @@ export default function Home() {
           </motion.div>
         ))}
         {articles.length > 10 && <div className="spacer"></div>}
-
-        <motion.div
-          variants={defaultMotion}
-          initial="hidden"
-          animate="visible"
-          className="socialWrapper"
-        >
-          <a target="blank" href="https://www.linkedin.com/in/luciano-infanti/">
-            LinkedIn
-          </a>
-          <a target="blank" href="https://github.com/LucianoInfanti/portfolio">
-            GitHub
-          </a>
-          <a target="blank" href="https://savee.it/lucianoinfanti/">
-            Savee
-          </a>
-        </motion.div>
       </div>
     </div>
   );
